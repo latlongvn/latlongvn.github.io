@@ -1,0 +1,77 @@
+/* Dracula Theme for Jekyll Code Highlighting */
+
+.highlight {
+  background: #282a36;
+  color: #f8f8f2;
+}
+
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs {
+  color: #97a4c8; /* Comments */
+  font-style: italic;
+}
+
+.highlight .err {
+  color: #f8f8f2;
+  background-color: #ff5555;
+}
+
+.highlight .k,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #ff79c6; /* Keywords */
+}
+
+.highlight .o,
+.highlight .ow {
+  color: #ffb86c; /* Operators */
+}
+
+.highlight .m,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo {
+  color: #bd93f9; /* Numbers */
+}
+
+.highlight .s,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1 {
+  color: #f1fa8c; /* Strings */
+}
+
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .ne,
+.highlight .nf,
+.highlight .ni,
+.highlight .nl,
+.highlight .nn,
+.highlight .no,
+.highlight .nt,
+.highlight .nv {
+  color: #50fa7b; /* Functions, Names */
+}
+
+.highlight .gp,
+.highlight .gu,
+.highlight .gd,
+.highlight .gi {
+  color: #f8f8f2;
+}

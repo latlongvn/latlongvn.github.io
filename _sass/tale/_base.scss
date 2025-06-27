@@ -1,0 +1,95 @@
+* {
+  @include box-sizing;
+  line-height: 1.5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #f8f8f2; // Dracula foreground
+  background-color: #0a0a0c; // Dracula background
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  font-size: 14px;
+  overflow-y: scroll;
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f8f8f2; // Bright Dracula header
+  font-family: 'Kanit', sans-serif;
+  line-height: normal;
+}
+
+a {
+  color: #d7f4ae; // Dracula cyan
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+blockquote {
+  border-left: 0.25rem solid #6272a4; // Dracula purple shade
+  color: #93f9d7; // Dracula lavender
+  margin: 0.8rem 0;
+  padding: 0.5rem 1rem;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 600px) {
+    padding: 0 5rem 0 1.25rem;
+  }
+}
+
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+}
+
+td {
+  vertical-align: top;
+}
+
+h1 {
+  color: #f8f8f2;
+}
+
+h2 {
+  color: #f8f8f2;
+}
+
+h3 {
+  color: #f8f8f2;
+}
+
+h4 {
+  color: #f8f8f2;
+}
+
+h5 {
+  color: #f8f8f2;
+}
+
+h6 {
+  color: #f8f8f2;
+}

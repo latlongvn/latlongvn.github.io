@@ -1,0 +1,29 @@
+// Colors
+$default-color: #f8f8f2 !default;
+$default-shade: #666666 !default;
+$default-tint: #aaa !default;
+$grey-1: #979797 !default;
+$grey-2: #e5e5e5 !default;
+$grey-3: #f9f9f9 !default;
+$white: #f8f8f2 !default;
+$blue: #6fafe7 !default;
+$shadow-color: rgba(0, 0, 0, .2) !default;
+$code-color: #da979d !default;
+
+// Fonts
+$serif-primary: 'Inter', sans-serif !default;       // for body text
+$serif-secondary: 'Inter', sans-serif !default;
+$sans-serif: 'Kanit', sans-serif !default;          // for headers
+$monospaced: Menlo, Monaco, monospace !default;     // Keep monospace for code
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
+}

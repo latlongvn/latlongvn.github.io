@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vietnam Map with Labels</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    #map {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  // Initialize map
+  var map = L.map('map').setView([13.5, 107.0], 5.8);
+
+  // Esri Satellite Layer
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; Esri, Maxar, Earthstar Geographics',
+    maxZoom: 19
+  }).addTo(map);
+
+  // Esri Reference Overlay
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+    attribution: '&copy; Esri',
+    maxZoom: 19
+  }).addTo(map);
+
+  // Add labeled markers
+  function addLabel(lat, lon, label) {
+    L.marker([lat, lon])
+      .addTo(map)
+      .bindTooltip(label, { permanent: true, direction: 'top', offset: [0, -10] })
+      .openTooltip();
+  }
+
+  // Original markers
+  addLabel(16.4637, 107.5909, "Huế");
+  addLabel(15.8801, 108.3380, "Hội An");
+  addLabel(16.1056, 108.2382, "Đà Nẵng");
+  addLabel(12.2388, 109.1967, "Nha Trang");
+  addLabel(10.7291, 106.7217, "Sài Gòn (Q.7)");
+
+  // Rural
+  addLabel(15.9598, 108.5095, "Cù Lao Chàm");
+  addLabel(16.1657, 107.8575, "Lúa House");
+  addLabel(16.5308, 107.6402, "Villa Louise");
+  addLabel(16.1670, 108.0950, "Suối Lương");
+  addLabel(12.5557, 109.1664, "Bà Ngoại");
+
+</script>
+
+</body>
+</html>
