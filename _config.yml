@@ -1,7 +1,7 @@
 # Site settings
 title:          Lát Long Labs
 description:    "Geospatial Intelligence and Beyond"
-baseurl:        "/tale"
+baseurl:        ""
 url:            "https://latlongvn.github.io"
 
 # Google Analytics
